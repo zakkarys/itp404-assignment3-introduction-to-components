@@ -1,4 +1,5 @@
 import React from 'react';
+import App from './App';
 
 function comment(num_comments){
     if(num_comments > 0) {
@@ -19,12 +20,14 @@ export default function RedditCard(props) {
         <div>
         <li>Author: {list.data.author} </li> 
         <li>Ups: {list.data.ups.toLocaleString('en')} </li>
-        <li>Comments: {comment(list.data.num_comments)}</li>         
+        <li>Comments: {comment(list.data.num_comments)}</li>       
         </div>
          
         </div>
         
     )
 }
+
+
 
 
