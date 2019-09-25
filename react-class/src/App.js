@@ -45,7 +45,7 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        {this.state.IncrementItem}
+        {this.state.totalclicks}
         <PreviousSearches previousSearches={this.state.previousSearches} applyPreviousSearch={this.applyPreviousSearch}/>
         <SearchForm onSearch={this.handleSearch} />
         <div onClick={this.IncrementItem} >
